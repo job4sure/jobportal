@@ -5,6 +5,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 
 @Entity
 @Table(name = "login")
@@ -34,6 +35,28 @@ public class Registration {
 	
 	@Column(name = "encripted")
 	private String encripted;
+	
+	@Transient
+	private String conformPassword;
+	
+	public String getConformPassword() {
+		return conformPassword;
+	}
+
+	public void setConformPassword(String conformPassword) {
+		this.conformPassword = conformPassword;
+	}
+
+	public String getCompanyurl() {
+		return Companyurl;
+	}
+
+	public void setCompanyurl(String companyurl) {
+		Companyurl = companyurl;
+	}
+
+	@Column(name = "Companyurl")
+	private String Companyurl;
 	
 	public Integer getEnabled() {
 		return enabled;

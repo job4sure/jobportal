@@ -26,7 +26,6 @@ public class RegistrationServiceImpl implements RegistrationService {
 			SendMail.mailSend(userregistration.getEmail(), userregistration.getPassword(),
 					userregistration.getFullName(), userregistration.getRegistrationId());
 		}
-		
 		return true;
 	}
 
