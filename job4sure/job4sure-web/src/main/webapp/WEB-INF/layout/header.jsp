@@ -25,7 +25,7 @@
 	});
 	</script>
 </head>
-<body onload='document.loginForm.username.focus();'>
+<body >
 
 <div id="main">
   <!-- Tray -->
@@ -33,7 +33,7 @@
     <p class="f-left box">
       
       <span class="f-left" id="switcher"> <a href="javascript:void(0);" rel="1col" class="styleswitch ico-col1" title="Display one column"><img src="resources/design/switcher-1col.gif" alt="1 Column" /></a> <a href="javascript:void(0)" rel="2col" class="styleswitch ico-col2" title="Display two columns"><img src="resources/design/switcher-2col.gif" alt="" /></a> </span> Project: <strong>JOB4SURE</strong> </p>
-    <p class="f-right"> <strong><a href="login" id="login">Login</a></strong> &nbsp;&nbsp;&nbsp;<strong><a href="registration">SignUp</a></strong></p>
+    <p class="f-right"> <strong><a href="OpenloginPage" id="login">Login</a></strong> &nbsp;&nbsp;&nbsp;<strong><a href="registration">SignUp</a></strong></p>
   </div>
   <!--  /tray -->
   </div>
