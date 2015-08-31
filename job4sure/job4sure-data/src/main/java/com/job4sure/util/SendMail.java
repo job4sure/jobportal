@@ -8,7 +8,7 @@ import javax.mail.internet.MimeMessage;
 
 public class SendMail {
 
-	public static String mailSend(String email, String password, String fullName,Integer registrationId) {
+	public static String mailSend(String email,String fullName,Integer registrationId) {
 		try {
 			Message message = new MimeMessage(SendMailProperty.mailProperty());
 			
@@ -19,8 +19,6 @@ public class SendMail {
 			msg += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You have been registered with jobpartal below are confirmation link click on link and access jobpartal account:<br>";
 			msg += " <br>";
 			msg += "<b>User Name:</b>" + email;
-			msg += " <br>";
-			msg += "<b>Password:</b>" + password;
 			msg += " <br>";
 		    msg += "http://localhost:9091/job4sure-web/verify.do?registrationId=" + registrationId;// used
 			msg += " <br>";

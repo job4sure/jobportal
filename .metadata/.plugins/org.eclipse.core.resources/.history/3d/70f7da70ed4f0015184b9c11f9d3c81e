@@ -1,0 +1,23 @@
+function emailVarification(email) {
+	   var emailId = email.value;
+	   alert("sdf");
+	     $.ajax({
+	  		url : "verifyUserEmailId.do?emailId=" + emailId,
+	  		type : "GET",
+	  		contentType : "application/json; charset=utf-8",
+	  		
+	  		success : function(t) {
+	  			if(true){
+	  				alert("your emailId already existed!");
+	  			 	document.getElementById("emailId").value="";  
+	  				
+	  				
+	  			}
+	  		
+	  		},
+	  		
+	  		error : function() {
+	  			alert("error");
+	  		}
+	  	})
+	  }  

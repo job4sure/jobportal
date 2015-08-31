@@ -28,7 +28,7 @@ public class Registration {
 	private String password;
 	
 	@Column(name = "mobile_no")
-	private Integer mobileNo;
+	private String mobileNo;
 	
 	@Column(name = "enabled")
 	private Integer enabled;
@@ -38,14 +38,6 @@ public class Registration {
 	
 	@Transient
 	private String conformPassword;
-	
-	public String getConformPassword() {
-		return conformPassword;
-	}
-
-	public void setConformPassword(String conformPassword) {
-		this.conformPassword = conformPassword;
-	}
 
 	public String getCompanyurl() {
 		return Companyurl;
@@ -106,6 +98,7 @@ public class Registration {
 		this.email = email;
 	}
 
+	
 	public String getPassword() {
 		return password;
 	}
@@ -114,12 +107,20 @@ public class Registration {
 		this.password = password;
 	}
 
-	public Integer getMobileNo() {
+	public String getMobileNo() {
 		return mobileNo;
 	}
 
-	public void setMobileNo(Integer mobileNo) {
+	public void setMobileNo(String mobileNo) {
 		this.mobileNo = mobileNo;
 	}
-	
+
+	public String getConformPassword() {
+		return conformPassword;
+	}
+
+	public void setConformPassword(String conformPassword) {
+		this.conformPassword = conformPassword;
+	}
+
 }

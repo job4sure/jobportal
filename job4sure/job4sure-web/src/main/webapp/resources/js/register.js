@@ -1,13 +1,21 @@
 
-	$(document).ready(function() {
-		$(".tabs > ul").tabs();
+	$(document).ready(function(){	
 		$('input[name=rollType]').click(function() {
-			if ($(this).val() == "0") {
-				$('#DivPaid').hide();
-				$('#DivFree').show();
+			if($(this).val() == "0") {
+				$('#companyname').hide();
+				$('#username').show();
+				$('#companyemail').hide();
+				$('#useremail').show();
+				$('#Companyurl').hide();
+				$('#urllabel').hide();
 			} else {
-				$('#DivFree').hide();
-				$('#DivPaid').show();
+				$('#username').hide();
+				$('#companyname').show();
+				$('#useremail').hide();
+				$('#companyemail').show();
+				$('#Companyurl').show();
+				$('#urllabel').show();
+			
 			}
 		});
 	});

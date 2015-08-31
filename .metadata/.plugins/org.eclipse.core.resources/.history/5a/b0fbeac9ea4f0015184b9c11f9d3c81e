@@ -1,0 +1,14 @@
+package com.job4sure.repository;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.job4sure.model.Registration;
+
+public interface RegistrationRepository extends JpaRepository<Registration, Integer>{
+
+	public List<Registration> findAll(String emailId);
+
+	
+}

@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.job4sure.model.Registration;
 import com.job4sure.service.RegistrationService;
@@ -47,4 +48,14 @@ public class RegistrationController {
 		}
 		return "redirect:/registration";
 	}
+	
+	/*@RequestMapping(value = "/verifyUserEmailId", method = { RequestMethod.GET })
+	@ResponseBody
+	public boolean verifyUserEmailId(@RequestParam(required = false) String emailId) {
+		System.out.println("saf" + emailId);
+		boolean status = false;
+		status = registrationService.verifyUserEmailId(emailId);
+		return status;
+
+	}*/
 }

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1441012359130_0" label="job4sure" name="job4sure">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/job4sure-web" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/job4sure-admin" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/job4sure-service" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/job4sure-data" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/job4sure" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1441012467816_1" label="Window Working Set" name="Aggregate for window 1441012467816"/>
+</workingSetManager>

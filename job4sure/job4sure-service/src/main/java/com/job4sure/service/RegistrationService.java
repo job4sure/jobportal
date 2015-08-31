@@ -6,4 +6,6 @@ public interface RegistrationService {
 
 	public boolean saveUserInformation(Registration registration);
 
+/*	public boolean verifyUserEmailId(String emailId);*/
+
 }
